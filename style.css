@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(19, 190, 194);
+    background: linear-gradient(60deg,
+            rgba(19, 190, 194, 1) 41%,
+            rgba(0, 0, 0, 1) 93%);
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 2rem;
+}
+
+input {
+    width: 50%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+#wBtn {
+    padding: 1rem 3rem;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+#wBtn:hover {
+    background-color: rgba(50, 255, 245, 1);
+    color: #000;
+}
+
+#wBtn:active {
+    transform: scale(0.9);
+}
+
+.unitBox {
+    border: 2px solid #fff;
+    border-radius: 6px;
+    padding: 2rem 1rem;
+    margin: 1.5rem 1rem;
+}
+
+h2 {
+    text-transform: capitalize;
+    text-decoration: 2px solid underline;
+    border-bottom: 2px solid black;
+    padding: 1rem;
+}
+
+table {
+    text-align: left;
+}
+
+tr {
+    color: #fff;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+[data-unitName] {
+    text-transform: capitalize;
+}
+
+[data-symbol] {
+    color: rgba(0, 240, 255);
+}
+
+@media only screen and (max-width:500px) {
+    input {
+        width: 80%;
+    }
+
+    tr,
+    th,
+    td {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        color: #fff;
+    }
+
+    tr {
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #fff;
+    }
+
+    td {
+        border: none;
+    }
+}

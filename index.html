@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight convertor</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>weight convertor</h1>
+        <input type="number" id="input" placeholder="please input weight in grams...">
+        <button type="button" id="wBtn">click here</button>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="unitBox metric">
+                        <h2>metric units</h2>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>name</th>
+                                    <th>symbol</th>
+                                    <th>value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-unitName="name">picogram</td>
+                                    <td data-symbol="symbol">(pg)</td>
+                                    <td data-value="0" class="pg"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">nenogram</td>
+                                    <td data-symbol="symbol">(ng)</td>
+                                    <td data-value="0" class="ng"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">microgram</td>
+                                    <td data-symbol="symbol">(&#xb5;g)</td>
+                                    <td data-value="0" class="mcg"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">milligram</td>
+                                    <td data-symbol="symbol">(mg)</td>
+                                    <td data-value="0" class="mg"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">carat</td>
+                                    <td data-symbol="symbol">(ct)</td>
+                                    <td data-value="0" class="ct"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">gram</td>
+                                    <td data-symbol="symbol">(g)</td>
+                                    <td data-value="0" class="g"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">kilogram</td>
+                                    <td data-symbol="symbol">(g)</td>
+                                    <td data-value="0" class="kg"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">quintal</td>
+                                    <td data-symbol="symbol">(q)</td>
+                                    <td data-value="0" class="q"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">tonne</td>
+                                    <td data-symbol="symbol">(t)</td>
+                                    <td data-value="0" class="t"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">kilotonne</td>
+                                    <td data-symbol="symbol">(kt)</td>
+                                    <td data-value="0" class="kt"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">megatonne</td>
+                                    <td data-symbol="symbol">(mt)</td>
+                                    <td data-value="0" class="mt"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">gigatonne</td>
+                                    <td data-symbol="symbol">(gt)</td>
+                                    <td data-value="0" class="gt"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="unitBox">
+                        <h2>imperial(US) units</h2>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>name</th>
+                                    <th>symbol</th>
+                                    <th>value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-unitName="name">grain</td>
+                                    <td data-symbol="symbol">(gr)</td>
+                                    <td data-value="0" class="gr"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">dram</td>
+                                    <td data-symbol="symbol">(dr)</td>
+                                    <td data-value="0" class="dr"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">ounce</td>
+                                    <td data-symbol="symbol">(oz)</td>
+                                    <td data-value="0" class="oz"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">pound</td>
+                                    <td data-symbol="symbol">(lb)</td>
+                                    <td data-value="0" class="lb"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">stone</td>
+                                    <td data-symbol="symbol">(st)</td>
+                                    <td data-value="0" class="st"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">short hundredweight</td>
+                                    <td data-symbol="symbol">(sh cwt)</td>
+                                    <td data-value="0" class="sh-cwt"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">long hundredweight</td>
+                                    <td data-symbol="symbol">(lg cwt)</td>
+                                    <td data-value="0" class="lg-cwt"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">short ton</td>
+                                    <td data-symbol="symbol">(st-ton)</td>
+                                    <td data-value="0" class="st-ton"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">long ton</td>
+                                    <td data-symbol="symbol">(lt-ton)</td>
+                                    <td data-value="0" class="lt-ton"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="unitBox">
+                        <h2>chinese units</h2>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>name</th>
+                                    <th>symbol</th>
+                                    <th>value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-unitName="name">dàn</td>
+                                    <td data-symbol="symbol">(dàn)</td>
+                                    <td data-value="0" class="dan"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">jīn</td>
+                                    <td data-symbol="symbol">(jīn)</td>
+                                    <td data-value="0" class="jin"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">liǎng</td>
+                                    <td data-symbol="symbol">(liǎng)</td>
+                                    <td data-value="0" class="liang"></td>
+                                </tr>
+                                <tr>
+                                    <td data-unitName="name">Qián</td>
+                                    <td data-symbol="symbol">(Qián)</td>
+                                    <td data-value="0" class="qian"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
